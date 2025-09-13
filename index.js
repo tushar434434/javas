@@ -73,7 +73,7 @@ const max=100;
 let randomnum=Math.floor(Math.random() *(max-min))+min;
 console.log(randomnum);
 */
-const myb=document.getElementById("myb");
+/*const myb=document.getElementById("myb");
 const myl=document.getElementById("myl");
 const myl1=document.getElementById("myl1");
 const myl2=document.getElementById("myl2");
@@ -89,7 +89,44 @@ myb.onclick=function(){
     myl.textContent=randomnum;
      myl1.textContent=randomnum;
       myl2.textContent=randomnum;
-}
+}*/
+//ternary operator;
+/*let age=12;
+let message=age>=18 ? "you are an adult":"you are not an adult";
+console.log(message);
+let time=10;
+let greet =time > 10 ? "Good Morning": "Good afternoon";
+console.log(greet);*/
+//switch case 
+//pad.end and pad.start function.rplaceWith also in string
+//string slicing
+/*const fullname="tushar kr";
+//let firstname=fullname.slice(0,6);
+//let lastname=fullname.slice(7);
+let firstname=fullname.slice(0,fullname.indexOf(" "));
+let lastname=fullname.slice(fullname.indexOf(" ")+1);
+console.log(firstname);
+console.log(lastname);
+const email="tushar@gmail.com";
+let username=email.slice(0,email.indexOf("@"));
+let extension=email.slice(email.indexOf("@")+1);
+console.log(username);
+console.log(extension);*/
+//method chaining
+//------NO METHOD CHAINING;
+let username =window.prompt("Enter your username: ")
+username=username.trim();
+let letter=username.charAt(0);
+letter=letter.toUpperCase();
+let extra=username.slice(1);
+extra=extra.toLocaleLowerCase();
+username=letter+extra;
+console.log(username);
+//---METHOD CHAINING---
+ 
+
+
+
 
 
 
