@@ -27,7 +27,17 @@
     <label id="myl" class="lab"></label><br>
     <label id="myl1" class="lab"></label><br>
     <label id="myl2" class="lab"></label><br>-->
-
+ <form>
+  <h1>TEMPERATURE CONVERSION</h1>
+  <input type="number" id="box" value="0"> <br>
+  <input type="radio" id="tof" name="unit">
+  <label for="tof">CELSIUS -> FAHREENHEIT</label><br>
+  <input type="radio" id="toc" name="unit">
+  <label for="toc">FAHREENHEIT -> CELSIUS</label><br>
+  <button type="button" onclick="convert()">submit</button><br>
+  <p id="result"></p>
+  
+ </form>
 
     <script src="index.js"></script>
 </body>

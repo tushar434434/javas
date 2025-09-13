@@ -40,3 +40,48 @@
     text-align: center;
     font-size: 3em;
 }*/
+body{
+    text-align: centre;
+    background-color: rgb(200, 131, 90);
+}
+h1{
+    color: #c82121;
+}
+form{
+    background-color: rgb(142, 155, 155);
+    text-align: center;
+    max-width: 350px;
+    margin:auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow:5px 5px 15px #3e3d3d;
+}
+#box{
+    width: 40%;
+    text-align: center;
+    font-size : 1.5em;
+    border: 2px solid rgb(35, 26, 31);
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+button{
+    margin-top: 15px;
+    background-color: #c82121;
+    font-size: 1.2em;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #582c2c;
+}
+#result{
+    font-size: 2em;
+}
+  

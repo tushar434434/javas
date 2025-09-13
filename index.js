@@ -114,17 +114,93 @@ console.log(username);
 console.log(extension);*/
 //method chaining
 //------NO METHOD CHAINING;
-let username =window.prompt("Enter your username: ")
+/*let username =window.prompt("Enter your username: ")
 username=username.trim();
 let letter=username.charAt(0);
 letter=letter.toUpperCase();
 let extra=username.slice(1);
 extra=extra.toLocaleLowerCase();
 username=letter+extra;
-console.log(username);
+console.log(username);*/
 //---METHOD CHAINING---
- 
+/*let username =window.prompt("Enter your username: ");
+username=username.trim().charAt(0).toUpperCase() +username.trim().slice(1).toLowerCase();
+console.log(username); */
+//logical operators same as c++
+//using of while loop for restriction
+/*let username="";
+while(username === "" || username === null){
+    username = window.prompt("Enter your name");
+}
 
+console.log(`hello ${username}`);*/
+/*let login=false;
+let username;
+let pass;
+while(!login){
+    username=window.prompt(`Enter your name`);
+    pass=window.prompt(`Enter password`);
+    if(username ==="tushar" && pass ===  "tushar"){
+        login=true;
+        console.log("You are logged in!");
+    }
+    else{
+        console.log("Invalid credentials");
+    }
+}*/
+//NUMBER GUESSING GAME
+/*const minnum=1;
+const maxnum=100;
+const answer=Math.floor(Math.random()*(maxnum - minnum + 1)) + minnum;
+console.log(answer);
+let attempt=0;
+let guess;
+let running=true;
+while(running){
+guess=window.prompt(`guess a number between ${minnum} - ${maxnum}`);
+guess=Number(guess);
+if(isNaN(guess)){
+    window.alert("please enter a valid number");
+}
+else if(guess < minnum || guess> maxnum){
+    window.alert("please enter a valid number");
+}
+else{
+    attempt++;
+    if(guess<answer){
+        window.alert("TOO LOW try again");
+    }
+    else if(guess>answer){
+        window.alert("TOO high try again");
+    }
+    else{
+        window.alert(`Correct! The answe was ${answer}.It took you ${attempt} attempt.`);
+        running=false;
+    }
+}   
+}*/
+ //functions,variable and globally decleration
+ //temperatue convertor for degree alt+0176
+ const box=document.getElementById("box");
+ const tof=document.getElementById("tof");
+ const toc=document.getElementById("toc");
+ let temp;
+ function convert(){
+    if(tof.checked){
+        temp=Number(box.value);
+        temp=temp * 9 / 5 + 32;
+        result.textContent=temp.toFixed(1)+"°F";
+
+    }
+    else if(toc.checked){
+        temp=Number(box.value);
+        temp=(temp-32) * (5/9);
+        result.textContent=temp.toFixed(1)+"°C";
+    }
+    else{
+       result.textContent="SELECT A UNIT";
+    }
+ }
 
 
 
