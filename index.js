@@ -181,7 +181,7 @@ else{
 }*/
  //functions,variable and globally decleration
  //temperatue convertor for degree alt+0176
- const box=document.getElementById("box");
+ /*const box=document.getElementById("box");
  const tof=document.getElementById("tof");
  const toc=document.getElementById("toc");
  let temp;
@@ -200,9 +200,45 @@ else{
     else{
        result.textContent="SELECT A UNIT";
     }
- }
+ }*/
+ //ARRAY and spread operator...
+ //DICE ROLLER
+ /*function rolldice(){
+    const numofdice=Number(document.getElementById("nod").value);
+    const diceresult=document.getElementById("result");
+    const image=document.getElementById("images");
+    const values=[];
+    const images=[];
+    for (let i=0;i<numofdice;i++){
+        const value=Math.floor(Math.random()*6)+1; 
+        values.push(value);
+        images.push(`<img src="public/pictures/${value}.svg" alt="Dice ${value}>`);
+    }
+    diceresult.textContent=`dice values are: ${values.join(', ')}`;
+    image.innerHTML=images.join('');
+ }*/
+function rolldice() {
+    const numofdice = parseInt(document.getElementById("nod").value, 10);
 
+    
 
+    const diceresult = document.getElementById("result");
+    const image = document.getElementById("images");
+
+    const values = [];
+    const imagesArr = [];
+
+    for (let i = 0; i < numofdice; i++) {
+        const value = Math.floor(Math.random() * 6) + 1;
+        const path = `pictures/${value}.svg`;
+        console.log("Trying to load:", path);
+        values.push(value);
+        imagesArr.push(`<img src="${path}" alt="Dice ${value}" style="width:60px; margin:5px;">`);
+    }
+
+    diceresult.textContent = `Dice values are: ${values.join(", ")}`;
+    image.innerHTML = imagesArr.join("");
+}
 
 
 

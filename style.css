@@ -40,7 +40,7 @@
     text-align: center;
     font-size: 3em;
 }*/
-body{
+/*body{
     text-align: centre;
     background-color: rgb(200, 131, 90);
 }
@@ -83,5 +83,24 @@ button:hover{
 }
 #result{
     font-size: 2em;
+}*/
+#container{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
 }
-  
+button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(5, 131, 131);
+    color: aliceblue;
+    font-weight: bold;
+    cursor:pointer;
+}
+button:hover{
+    background-color: rgb(51, 115, 115);
+}
+button:active{
+    background-color: rgb(94, 223, 223);
+}
