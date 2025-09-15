@@ -217,7 +217,7 @@ else{
     diceresult.textContent=`dice values are: ${values.join(', ')}`;
     image.innerHTML=images.join('');
  }*/
-function rolldice() {
+/*function rolldice() {
     const numofdice = parseInt(document.getElementById("nod").value, 10);
 
     
@@ -238,7 +238,11 @@ function rolldice() {
 
     diceresult.textContent = `Dice values are: ${values.join(", ")}`;
     image.innerHTML = imagesArr.join("");
-}
-
+}*/
+//RANDOM PASS GENERATOR
+/*in this we need 4 four const with false then pass them in a function whith string like lc=abc and for all same then make constraint for pass lenth and use random inbuilt function;
+*/
+ 
+ 
 
 
